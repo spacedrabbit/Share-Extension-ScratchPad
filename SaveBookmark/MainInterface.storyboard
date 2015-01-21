@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="j1y-V4-xli">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Share View Controller-->
+        <scene sceneID="ceB-am-kn3">
+            <objects>
+                <viewController id="j1y-V4-xli" customClass="ShareViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8bI-gs-bmD"/>
+                        <viewControllerLayoutGuide type="bottom" id="d5i-Ba-RvD"/>
+                    </layoutGuides>
+                    <view key="view" opaque="NO" contentMode="scaleToFill" id="wbc-yd-nQP" userLabel="Root View">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="0Z4-Fr-uhl" userLabel="Alignment View">
+                                <rect key="frame" x="16" y="20" width="288" height="250"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nTw-dU-biy" userLabel="UI Container">
+                                        <rect key="frame" x="45" y="25" width="200" height="200"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="0.22" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="nTw-dU-biy" secondAttribute="height" multiplier="1:1" id="4EE-Ze-XhG"/>
+                                            <constraint firstAttribute="width" priority="750" constant="200" id="LJs-bP-cKt"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="0.5" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="nTw-dU-biy" secondAttribute="trailing" priority="250" constant="43" id="8HS-IM-Jkv"/>
+                                    <constraint firstAttribute="centerY" secondItem="nTw-dU-biy" secondAttribute="centerY" constant="0.5" id="9i2-yR-hSQ"/>
+                                    <constraint firstItem="nTw-dU-biy" firstAttribute="leading" secondItem="0Z4-Fr-uhl" secondAttribute="leading" priority="250" constant="45" id="GHq-wJ-HSY"/>
+                                    <constraint firstAttribute="bottom" secondItem="nTw-dU-biy" secondAttribute="bottom" constant="25" id="vMD-yl-nnd"/>
+                                    <constraint firstAttribute="centerX" secondItem="nTw-dU-biy" secondAttribute="centerX" constant="-0.5" id="wyQ-Xp-KWe"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0Z4-Fr-uhl" firstAttribute="trailing" secondItem="wbc-yd-nQP" secondAttribute="trailingMargin" id="Dcb-z9-s5P"/>
+                            <constraint firstItem="d5i-Ba-RvD" firstAttribute="top" secondItem="0Z4-Fr-uhl" secondAttribute="bottom" priority="500" constant="298" id="S9l-Wi-Iqj"/>
+                            <constraint firstItem="0Z4-Fr-uhl" firstAttribute="leading" secondItem="wbc-yd-nQP" secondAttribute="leadingMargin" id="cn0-kw-J4f"/>
+                            <constraint firstItem="0Z4-Fr-uhl" firstAttribute="top" secondItem="8bI-gs-bmD" secondAttribute="bottom" id="yI1-gf-qiW"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="568"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CEy-Cv-SGf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="573" y="78"/>
+        </scene>
+    </scenes>
+</document>
